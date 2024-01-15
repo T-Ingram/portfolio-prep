@@ -1,1 +1,35 @@
+/* Styling for the colored trail */
+/* .trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00f; /* Blue color, you can change this */
+  pointer-events: none; /* Ensure the element doesn't interfere with mouse events on other elements */
+  transition: transform 0.1s ease-in-out, opacity 0.5s ease-in-out;
+} */
 
+/* Styling for the water ripple effect */
+.ripple-container {
+  position: absolute;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00f; /* Blue color, you can change this */
+  transform: scale(0);
+  opacity: 0.8;
+  pointer-events: none;
+  animation: ripple-animation .6s ease-out;
+}
+
+@keyframes ripple-animation {
+  to {
+      transform: scale(3);
+      opacity: 0;
+  }
+}
