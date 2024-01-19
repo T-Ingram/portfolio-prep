@@ -1,28 +1,38 @@
- 
-transition: transform 0.1s ease-in-out, opacity 0.5s ease-in-out;
+body {
+  margin: 0;
+  padding: 0;
+}
 
-
-/* Styling for the water ripple effect */
-.ripple-container {
-  position: absolute;
+#backgroundImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.ripple {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #00f; /* Blue color, you can change this */
-  transform: scale(0);
-  opacity: 0.8;
-  pointer-events: none;
-  animation: ripple-animation .6s ease-out;
+#backgroundImg img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
 }
 
-@keyframes ripple-animation {
-  to {
-      transform: scale(3);
-      opacity: 0;
-  }
+header, main, footer {
+  position: relative;
+  z-index: 1; /* Set a higher z-index for content to appear in front of the background */
+}
+
+#headShot {
+  border: 1px solid red;
+  display: flex;
+}
+
+#headShot img {
+  border: 1px red solid;
+
+  padding: 1%;
+  max-width: 100%;
+  width: 20%;
+  height: auto;
+  margin-left:65%;
 }
