@@ -1,8 +1,11 @@
+/* Reset styles and set a font-family for the entire page */
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
+/* Background image styling */
 #backgroundImg {
   position: fixed;
   top: 0;
@@ -17,11 +20,13 @@ body {
   height: auto; /* Maintain the aspect ratio */
 }
 
+/* Header, main, footer styles */
 header, main, footer {
   position: relative;
   z-index: 1; /* Set a higher z-index for content to appear in front of the background */
 }
 
+/* Styling for the headShot section */
 #headShot {
   border: 1px solid red;
   display: flex;
@@ -33,5 +38,49 @@ header, main, footer {
   max-width: 100%;
   width: 20%;
   height: auto;
-  margin-left:65%;
+  margin-left: 65%;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+#catchyPhrase p {
+  margin: 0; /* Remove default margin */
+}
+
+/* LogoLinks styles */
+#logoLinks {
+  display: flex;
+}
+
+#logoLinks a {
+  margin-right: 10px; /* Adjust margin between the logos as needed */
+}
+
+#logoLinks img {
+  width: 30px; /* Adjust the reduced size as needed */
+  height: auto;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Add styles for smaller screens */
 }
