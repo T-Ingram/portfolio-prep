@@ -26,31 +26,22 @@ header, main, footer {
   z-index: 1; /* Set a higher z-index for content to appear in front of the background */
 }
 
-/* Styling for the headShot section */
-#headShot {
-  border: 1px solid red;
-  display: flex;
-}
-
-#headShot img {
-  border: 1px red solid;
-  padding: 1%;
-  max-width: 100%;
-  width: 20%;
-  height: auto;
-  margin-left: 65%;
-}
-
 /* Header styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; /* Adjust padding as needed */
+  margin-top: -2%;
 }
 
-#catchyPhrase p {
-  margin: 0; /* Remove default margin */
+#catchyPhrase  {
+  text-align: center; 
+  color: #fff;
+  max-width: 100%;
+  width: 100%;
+  height: 10%;
+  font-style: italic;
+  font-size: 2em;
 }
 
 /* LogoLinks styles */
@@ -63,14 +54,42 @@ header {
 }
 
 #logoLinks img {
-  width: 30px; /* Adjust the reduced size as needed */
+  width: 2.5em; /* Adjust the reduced size as needed */
   height: auto;
 }
 
 /* Main content styles */
 main {
-  padding: 20px;
+  padding: 2%;
 }
+
+/* Styling for the upper section */
+#upperSection {
+  display: flex;
+  align-items: center;
+}
+
+div p {
+  color: #fff;
+  margin-right: 5%;
+  margin-left: 10%;
+  font-size: 1.75em;
+  text-shadow: -1px -1px 1px #000,  
+  1px -1px 1px #000,
+  -1px 1px 1px #000,
+  1px 1px 1px #000;
+}
+
+#upperSection img {
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 30%;
+  max-width: 100%;
+  width: 25%;
+  height: auto;
+}
+
+
 
 /* Footer styles */
 footer {
