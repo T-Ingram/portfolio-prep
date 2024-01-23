@@ -1,11 +1,9 @@
-/* Reset styles and set a font-family for the entire page */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
 }
 
-/* Background image styling */
 #backgroundImg {
   position: fixed;
   top: 0;
@@ -16,17 +14,15 @@ body {
 }
 
 #backgroundImg img {
-  width: 100%; /* Adjust the width as needed */
-  height: auto; /* Maintain the aspect ratio */
+  width: 100%;
+  height: auto; 
 }
 
-/* Header, main, footer styles */
 header, main, footer {
   position: relative;
-  z-index: 1; /* Set a higher z-index for content to appear in front of the background */
+  z-index: 1; 
 }
 
-/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -44,26 +40,23 @@ header {
   font-size: 2em;
 }
 
-/* LogoLinks styles */
 #logoLinks {
   display: flex;
 }
 
 #logoLinks a {
-  margin-right: 10px; /* Adjust margin between the logos as needed */
+  margin-right: 10px; 
 }
 
 #logoLinks img {
-  width: 2.5em; /* Adjust the reduced size as needed */
+  width: 2.5em;
   height: auto;
 }
 
-/* Main content styles */
 main {
   padding: 2%;
 }
 
-/* Styling for the upper section */
 #upperSection {
   display: flex;
   align-items: center;
@@ -90,15 +83,13 @@ div p {
 }
 
 #photoBin1 img {
-  border: 1px solid red;
-  width: 100%; /* Make the images fill the container width */
-  height: auto; /* Maintain the aspect ratio */
-  max-width: 45%; /* Set a maximum width */
-  max-height: 45%; /* Set a maximum height */
+  margin: 2%;
+  width: 100%; 
+  height: auto;
+  max-width: 45%;
+  max-height: 45%;
 }
 
-
-/* Footer styles */
 footer {
   background-color: #333;
   color: #fff;
@@ -106,7 +97,5 @@ footer {
   text-align: center;
 }
 
-/* Media query for responsiveness */
 @media (max-width: 768px) {
-  /* Add styles for smaller screens */
 }
