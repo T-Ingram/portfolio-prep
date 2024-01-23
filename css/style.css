@@ -89,6 +89,13 @@ div p {
   height: auto;
 }
 
+#photoBin1 img {
+  border: 1px solid red;
+  width: 100%; /* Make the images fill the container width */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 45%; /* Set a maximum width */
+  max-height: 45%; /* Set a maximum height */
+}
 
 
 /* Footer styles */
